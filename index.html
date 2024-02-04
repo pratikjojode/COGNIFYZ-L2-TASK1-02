@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+    src="https://kit.fontawesome.com/d25cfcce1c.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+
+
+    <div id="navigation">
+        <div class="logo">P.J</div>
+        <nav>
+          <ul>
+            <li class="hide">home</li>
+            <li class="hide">work</li>
+            <li class="hide">contact</li>
+            <li><i class="fa-solid fa-bars" id="menu" onclick="showSideBar()"></i></li>
+          </ul>
+        </nav>
+      </div>
+
+<!-- second nav -->
+<nav>
+    <ul class="sidebar">
+       <li><i class="fa-solid fa-x" id="close" onclick="hideSideBar()"></i></li>
+        <li>home</li>
+        <li>work</li>
+        <li>contact</li>
+    </ul>
+</nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

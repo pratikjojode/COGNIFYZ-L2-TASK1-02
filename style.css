@@ -1,0 +1,85 @@
+/* navigation goes here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navigation {
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    height: 10vh;
+    background-color: aquamarine;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  nav ul li {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  nav ul li:hover{
+    color: blue;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: 1000;
+  }
+  #menu{
+  display: none;
+  }
+
+  /* second nav */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(164, 126, 126, 0.011);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    height: 18vh;
+    align-items: flex-start;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+
+}
+.sidebar li{
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (max-width: 580px) {
+    #navigation {
+      height: 10vh;
+      background-color: grey;
+    }
+    .hide {
+      display: none;
+    }
+    .work-container {
+      padding: 20px;
+    }
+    #menu {
+      font-size: 30px;
+      display: block;
+    }
+  }
+  
